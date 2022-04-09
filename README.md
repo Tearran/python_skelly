@@ -3,14 +3,16 @@
 python skelly cumulation of common and novel methods to distribute so called installable python packages.
 
 ```bash
-SKELLY_APP = hello_world 
-[ -d $HOME/python_skelly ] && [ zip -r $HOME/"$SKELLY_APP.zip" $HOME/python_skelly/* || exit (1)
-[ -d $HOME/skelly_app.zip ] && echo '#!/usr/bin/env python3' | cat - skelly_app.zip > skelly_app
-[ -f skelly_app ] && chmod +x skelly_app
+[ -d $HOME/python_skelly ]
+$ cd python_skelly
+$ zip -r ../python_skelly.zip *
+$ cd ..
+python python_skelly.zip
+
 ```
 run
 ```bash
-./skelly_app
+python3 python_skelly.zip
 ```
 referances :
 - https://www.pypa.io/en/latest/
